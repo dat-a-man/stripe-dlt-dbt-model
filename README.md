@@ -44,38 +44,55 @@ dbt_<pipeline-name>/
 ├── macros/
 ├── models/
 │   ├── marts/
-│   │   ├── dim_<pipeline-name>__dlt_loads.sql
-│   │   ├── dim_<pipeline-name>__balance_transaction__fee_details.sql
-│   │   ├── dim_<pipeline-name>__coupon.sql
-│   │   ├── dim_<pipeline-name>__customer.sql
-│   │   ├── dim_<pipeline-name>__event__data__object__available.sql
-│   │   ├── dim_<pipeline-name>__event__data__object__discounts.sql
-│   │   ├── dim_<pipeline-name>__event__data__object__items__data.sql
-│   │   ├── dim_<pipeline-name>__event__data__object__lines__data.sql
-│   │   ├── dim_<pipeline-name>__event__data__object__lines__data__discount_amounts.sql
-│   │   ├── dim_<pipeline-name>__invoice__discounts.sql
-│   │   ├── dim_<pipeline-name>__invoice__lines__data.sql
-│   │   ├── dim_<pipeline-name>__price.sql
-│   │   ├── dim_<pipeline-name>__product.sql
-│   │   ├── dim_<pipeline-name>__subscription__items__data.sql
-│   │   └── fact_<pipeline-name>__balance_transaction.sql
-│   │   └── fact_<pipeline-name>__event.sql
-│   │   └── fact_<pipeline-name>__invoice.sql
-│   │   └── fact_<pipeline-name>__subscription.sql
+│   │   ├── dim_dlt_loads.sql
+│   │   ├── dim_balance_transaction__fee_details.sql
+│   │   ├── dim_coupon.sql
+│   │   ├── dim_customer.sql
+│   │   ├── dim_event__data__object__available.sql
+│   │   ├── dim_event__data__object__discounts.sql
+│   │   ├── dim_event__data__object__items__data.sql
+│   │   ├── dim_event__data__object__lines__data__discount_amounts.sql
+│   │   ├── dim_event__data__object__lines__data.sql
+│   │   ├── dim_event__data__object__payment_method_types.sql
+│   │   ├── dim_event__data__object__pending.sql
+│   │   ├── dim_event__data__object__total_discount_amounts.sql
+│   │   ├── dim_invoice__discounts.sql
+│   │   ├── dim_invoice__lines__data__discount_amounts.sql
+│   │   ├── dim_invoice__lines__data.sql
+│   │   ├── dim_invoice__total_discount_amounts.sql
+│   │   ├── dim_price.sql
+│   │   ├── dim_product.sql
+│   │   ├── dim_subscription__discounts.sql
+│   │   ├── dim_subscription__items__data.sql
+│   │   ├── fact_balance_transaction.sql
+│   │   ├── fact_event.sql
+│   │   ├── fact_invoice.sql
+│   │   ├── fact_subscription.sql
 │   ├── staging/
-│   │   ├── stg_<pipeline-name>__dlt_loads.sql
-│   │   ├── stg_<pipeline-name>__balance_transaction.sql
-│   │   ├── stg_<pipeline-name>__coupon.sql
-│   │   ├── stg_<pipeline-name>__customer.sql
-│   │   ├── stg_<pipeline-name>__event__data__object__available.sql
-│   │   ├── stg_<pipeline-name>__event__data__object__discounts.sql
-│   │   ├── stg_<pipeline-name>__event__data__object__items__data.sql
-│   │   ├── stg_<pipeline-name>__event__data__object__lines__data.sql
-│   │   ├── stg_<pipeline-name>__invoice.sql
-│   │   ├── stg_<pipeline-name>__price.sql
-│   │   ├── stg_<pipeline-name>__product.sql
-│   │   ├── stg_<pipeline-name>__subscription.sql
-│   └── stg_<pipeline-name>__processed_load_ids.sql
+│   │   ├── stg_dlt_loads.sql
+│   │   ├── stg_balance_transaction__fee_details.sql
+│   │   ├── stg_coupon.sql
+│   │   ├── stg_customer.sql
+│   │   ├── stg_event__data__object__available.sql
+│   │   ├── stg_event__data__object__discounts.sql
+│   │   ├── stg_event__data__object__items__data.sql
+│   │   ├── stg_event__data__object__lines__data__discount_amounts.sql
+│   │   ├── stg_event__data__object__lines__data.sql
+│   │   ├── stg_event__data__object__payment_method_types.sql
+│   │   ├── stg_event__data__object__pending.sql
+│   │   ├── stg_event__data__object__total_discount_amounts.sql
+│   │   ├── stg_invoice__discounts.sql
+│   │   ├── stg_invoice__lines__data__discount_amounts.sql
+│   │   ├── stg_invoice__lines__data.sql
+│   │   ├── stg_invoice__total_discount_amounts.sql
+│   │   ├── stg_price.sql
+│   │   ├── stg_product.sql
+│   │   ├── stg_subscription__discounts.sql
+│   │   ├── stg_subscription__items__data.sql
+│   │   ├── stg_balance_transaction.sql
+│   │   ├── stg_event.sql
+│   │   ├── stg_invoice.sql
+│   │   ├── stg_subscription.sql
 ├── tests/
 ├── dbt_project.yml
 ├── requirements.txt
